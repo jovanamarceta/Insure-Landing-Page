@@ -1,0 +1,27 @@
+#card {
+	position: relative;
+	padding: 0 0 150px;
+	@media only screen and (max-width: 375px) {
+		padding: 0 0 142px
+	}
+}
+.card__container {
+	background-color: $color-primary;
+	padding: 69px 80px;
+	justify-content: space-between;
+	position: relative;
+	&:before {
+		content: url(../images/bg-pattern-how-we-work-desktop.png);
+		position: absolute;
+		right: 0;
+		top: 0;
+		@media only screen and (max-width: 375px) {
+			content: url(../images/bg-pattern-how-we-work-mobile.png);
+		}
+	}
+	@media only screen and (max-width: 375px) {
+		padding: 72px 0;
+		display: block;
+		text-align: center;
+	}
+}

@@ -1,0 +1,95 @@
+#banner {
+	padding: 105px 0 127px;
+	position: relative;
+	@media only screen and (max-width: 768px) {
+		z-index: -1;
+	}
+	@media only screen and (max-width: 375px) {
+		padding: 0;
+	}
+}
+#banner:before {
+	content: url(../images/bg-pattern-intro-right-desktop.png);
+	position: absolute;
+	right: 0;
+	top: -82px;
+	@media only screen and (max-width: 375px) {
+		content: url(../images/bg-pattern-intro-right-mobile.png);
+		top: 780px;
+	};
+}
+#banner:after {
+	content: url(../images/bg-pattern-intro-left-desktop.png);
+	position: absolute;
+	left: 0;
+	bottom: -339px;
+	@media only screen and (max-width: 375px) {
+		content: url(../images/bg-pattern-intro-left-mobile.png);
+		bottom: 0;
+		top: 452px;
+	};
+}
+.banner__content {
+	display: flex;
+	align-items: bottom;
+	justify-content: space-between;
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+		// display: block;
+	};
+	// @media only screen and (max-width: 375px) {
+	// 	flex-direction: column;
+	// };
+}
+.banner__text {
+	position: relative;
+	@media only screen and (max-width: 768px) {
+		margin-bottom: 30px;
+	}
+	@media only screen and (max-width: 375px) {
+		text-align: center;
+		padding: 89px 23px;
+	}
+}
+.banner__content-title:before {
+	content: '';
+	display: block;
+	height: 1px;
+	width: 150px;
+	background-color: $white;
+	margin-bottom: 61px;
+	@media only screen and (max-width: 768px) {
+		display: none;
+	}
+}
+.banner__content-text {
+	margin-bottom: 35px;
+	@media only screen and (max-width: 375px) {
+		line-height: 25px;
+	}
+}
+.banner__text {
+	@media only screen and (max-width: 768px) {
+		text-align: center;
+	}
+	@media only screen and (max-width: 375px) {
+		order: 2;
+	}
+}
+.banner__img {
+	@media only screen and (max-width: 375px) {
+		order: 1;
+	}
+}
+.banner__img-photo {
+	position: absolute;
+	width: 540px;
+	@media only screen and (max-width: 768px) {
+		width: 100%;
+		position: relative;
+	}
+	// @media only screen and (max-width: 375px) {
+	// 	width: 100%;
+	// 	position: relative;
+	// }
+}

@@ -1,0 +1,37 @@
+#boxes {
+	padding: 304px 0 160px;
+	@media only screen and (max-width: 768px) {
+		padding: 100px 0 141px;
+	}
+	@media only screen and (max-width: 375px) {
+		padding: 150px 0 141px;
+	}
+}
+.box {
+	@media only screen and (max-width: 375px) {
+		text-align: center;
+		margin-bottom: 57px;
+	}
+}
+.boxes__title {
+	margin-bottom: 87px;
+	@media only screen and (max-width: 375px) {
+		text-align: center;
+		margin-bottom: 76px;
+	}
+}
+.boxes__title::before {
+	content: '';
+	display: block;
+	height: 1px;
+	width: 150px;
+	background-color: $violet;
+	margin-bottom: 52px;
+	@media only screen and (max-width: 375px) {
+		margin: 0 auto;
+		margin-bottom: 36px;
+	}
+}
+.boxes__text {
+	line-height: 25.2px;
+}
